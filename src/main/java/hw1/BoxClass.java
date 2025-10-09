@@ -1,12 +1,12 @@
 package Project.OOP.hw1;
 
 public class BoxClass {
-    String color;
-    int size;
-    boolean door;
-    String items;
-    int fill = 0;
-    String inventory;
+    private String color;
+    private int size;
+    private boolean door;
+    private String items;
+    private int fill = 0;
+    private String inventory;
     public BoxClass(int size){
         this.size = size;
     }

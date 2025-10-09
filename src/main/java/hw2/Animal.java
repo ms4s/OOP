@@ -1,17 +1,38 @@
 package Project.OOP.hw2;
 
-public class Animal {
-    String name;
-    int runSpeed;
-    int swimSpeed;
-    int stamina;
-    int distance;
+public abstract class Animal {
+    private String name;
+    private int runSpeed;
+    private int swimSpeed;
+    private int stamina;
+    private int distance;
     public Animal(String name, int runSpeed, int swimSpeed, int stamina){
         this.name = name;
         this.runSpeed = runSpeed;
         this.swimSpeed = swimSpeed;
         this.stamina = stamina;
     }
+
+    public String getName(){
+        return name;
+    }
+
+    public int getRunSpeed(){
+        return runSpeed;
+    }
+
+    public int getSwimSpeed(){
+        return swimSpeed;
+    }
+
+    public int getStamina(){
+        return stamina;
+    }
+
+    public void setStamina(int stamins) {
+        this.stamina = stamina;
+    }
+
     public void info(){
         System.out.println("Кличка: " + name);
         System.out.println("Скорость бега: " + runSpeed);
@@ -30,4 +51,5 @@ public class Animal {
             System.out.println(name + " устал");
         }
     }
+    public abstract void swim(int distance);
 }
